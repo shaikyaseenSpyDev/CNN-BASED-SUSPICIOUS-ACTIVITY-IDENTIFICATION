@@ -6,7 +6,7 @@ This project implements a system for identifying suspicious activity using a Con
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your_github_repository_url>
+    git clone https://github.com/shaikyaseenSpyDev/CNN-BASED-SUSPICIOUS-ACTIVITY-IDENTIFICATION.git
     ```
 2.  **Navigate to the project directory:**
     ```bash
