@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<title>CNN Based Suspicious Activity Identification</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/hacker_theme.css' %}"/>
+<script>
+    var images = [
+        "https://res.cloudinary.com/duupl1fy5/image/upload/v1748329280/Break_IN_r3xr3r.jpg",
+        "https://res.cloudinary.com/duupl1fy5/image/upload/v1748329290/hacker-banner-1024x427_nncj6n.jpg",
+        "https://res.cloudinary.com/duupl1fy5/image/upload/v1748330455/Screenshot_2025-05-27_125010_grduka.png"
+    ];
+    var currentIndex = 0;
+    function changeImage() {
+        document.getElementById('splash-image').src = images[currentIndex];
+        currentIndex = (currentIndex + 1) % images.length;
+    }
+    setInterval(changeImage, 3000);
+</script>
+</head>
+<body>
+<div class="container">
+	<div id="header">
+		<div id="logo">
+			<center><h2 class="glitch">CNN Based Suspicious Activity Identification</h2></center>
+		</div>
+		<div id="slogan">
+			
+		</div>
+	</div>
+	<div class="nav" id="menu">	
+		<ul><center>
+			<li class="first current_page_item"><a href="{% url 'index' %}">Home</a></li>
+			<li class="first current_page_item"><a href="{% url 'AdminLogin' %}">Admin Login Here</a></li>
+		</center></ul>
+		<br class="clearfix" />
+	</div>
+	<div id="splash">
+		<img id="splash-image" class="pic cctv-border" src="https://res.cloudinary.com/duupl1fy5/image/upload/v1748329280/Break_IN_r3xr3r.jpg" width="800" height="400" alt="Hacker Theme" />
+	</div>
+	<br/>
+	<p class="card">
+	CNN Based Suspicious Activity Identification</p>
+</div>
+</body>
+</html>

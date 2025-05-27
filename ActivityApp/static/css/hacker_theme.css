@@ -1,0 +1,204 @@
+/* Hacker Theme CSS */
+:root {
+    --primary-color: #00ff00;
+    --secondary-color: #00cc00;
+    --background-color: #050505;
+    --text-color: #00ff00;
+    --accent-color: #00ff00;
+    --error-color: #ff0000;
+    --success-color: #00ff00;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Courier New', monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://media.tenor.com/e1zK71T2QoIAAAAd/matrix.gif');
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(5, 5, 5, 0.7);
+}
+
+/* Terminal-like elements */
+.terminal {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+}
+
+/* Glowing text effect */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    text-shadow: 0 0 8px var(--primary-color);
+    letter-spacing: 2px;
+}
+
+/* Button styling */
+.btn {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    font-family: 'Courier New', monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+/* Form elements */
+input, select, textarea {
+    background-color: #000;
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+    padding: 10px;
+    font-family: 'Courier New', monospace;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px var(--primary-color);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+th, td, label {
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    text-align: left;
+    color: var(--text-color);
+}
+
+th {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+/* Loading animation */
+.loading {
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    border-top: 2px solid transparent;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Glitch effect */
+.glitch {
+    position: relative;
+    animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+    2%, 64% {
+        transform: translate(2px, 0) skew(0deg);
+    }
+    4%, 60% {
+        transform: translate(-2px, 0) skew(0deg);
+    }
+    62% {
+        transform: translate(0, 0) skew(5deg);
+    }
+}
+
+/* Alert messages */
+.alert {
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid var(--primary-color);
+    background-color: rgba(0, 255, 0, 0.15);
+}
+
+.alert-error {
+    border-color: var(--error-color);
+    color: var(--error-color);
+}
+
+.alert-success {
+    border-color: var(--success-color);
+    color: var(--success-color);
+}
+
+/* Navigation */
+.nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--primary-color);
+    text-shadow: 0 0 8px var(--primary-color);
+}
+
+/* Card styling */
+.card {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Add this rule to ensure the image is responsive and fits the screen */
+.responsive-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.cctv-border {
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+    /* Optional: Add some distortion or scanline effect using pseudo-elements if needed, but let's start simple */
+}
+
+#splash img {
+    display: block;
+    margin: 0 auto;
+} 
